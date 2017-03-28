@@ -355,22 +355,24 @@ h1,h2,h3,h4,h5,h6,p{
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+
+
 #contact{
-  min-height: 200px;
+  min-height: auto;
   background-color: #DC143C;
   padding-left: 0;
   padding-right: 0;
-  margin-bottom: - 2vw;
 }
 
 
 
 #contact_info{
   margin-top: 1%;
+  background-color: #DC143C;
   position: absolute;
-  left: 35%;
+  /*left: 35%;*/
   text-align: center;
-  width: 30%;
+  width: 100%;
   color: black;
   padding-left: 0;
   padding-right: 0;
@@ -389,8 +391,8 @@ h1,h2,h3,h4,h5,h6,p{
 
 #contact_links{
   text-decoration: none !important;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   text-align: center;
   padding-left: 0;
   padding-right: 0;
@@ -398,7 +400,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 #contact_links li{
   display: inline-block;
-  width: 18%;
+  width: 9%;
   margin:0px auto 0px auto;
 }
 

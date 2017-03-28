@@ -27,7 +27,7 @@ app.controller('mainController', ['$scope', '$location', 'mainFactory', '$rootSc
   }
   curr_project = library['housingcrime'];
   $rootScope.project = library['housingcrime'];
-
+  checkMobileHeight();
 
   $scope.switch_project = function(name){
     if(curr_project['name'] != library[name]['name']){

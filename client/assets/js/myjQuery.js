@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
   resizeDiv();
+
   setTimeout(show_main_nav, 2500);
   setTimeout(show_header, 1500);
 
@@ -86,22 +87,34 @@ window.onresize = function(event) {
 
 $(window).scroll(function(){
   height = $('.video_wrapper').css( "height" );
-  header_opacity = $('#welcome').css('opacity');
-  number = height.match(/\d/g);
-  number = number.join("");
-  // console.log('video_div: ', height);
+  // header_opacity = $('#welcome').css('opacity');
+  // var ratio = window.devicePixelRatio || 1;
+  number = height.match(/\d/g).join("");;
+  // number = number.join("");
+  h1 = screen.height;
+  // console.log('screen width: ', w1);
+  // console.log('h1: ', h1);
+  // console.log('number: ', number);
+  // console.log('this: ', $(this).scrollTop());
   if ($(this).scrollTop()>number/3){
     $('#about_text').fadeIn("slow");
+    // console.log('ABOUT TEXT APPENDED');
   }
   if ($(this).scrollTop()>number*1.6){
     $('#projects_screen').fadeIn("slow");
     $('#projects_nav').fadeIn("slow");
+    // console.log('PROJECTS APPENDED');
   }
   if ($(this).scrollTop()>number){
     $('#sticky_nav').fadeIn();
     $( '.header_intro' ).fadeOut();
     $( "#main_nav" ).fadeOut();
   }
+  // if((h1-number) <= 111){
+  //   $('#about_text').fadeIn("slow");
+  //   $('#projects_screen').fadeIn("slow");
+  //   $('#projects_nav').fadeIn("slow");
+  // }
   else {
     if(document.getElementById("mySidenav").style.width == "20%"){
       document.getElementById("mySidenav").style.width = "0";
@@ -114,9 +127,20 @@ $(window).scroll(function(){
   }
 });
 
+function checkMobileHeight(){
+  w1 = screen.width;
+  h1 = screen.height;
+  if(w1 < h1){
+    $('#about_text').fadeIn("slow");
+    $('#projects_screen').fadeIn();
+    $('#projects_nav').fadeIn();
+    // console.log('APPENDED');
+  }
+}
+
 function resizeDiv() {
   width = $('.video_wrapper').css( "width" );
-  height = $('.video_wrapper').css( "height" );
+  height = $('#main').css( "height" );
   // console.log('resized: ', height);
   number = height.match(/\d/g);
   number = number.join("");
