@@ -1,5 +1,11 @@
 // console.log("jQuery is here");
 
+
+
+$(window).on('load', function() {
+   $("#cover").hide();
+});
+
 $(document).ready(function(){
   resizeDiv();
 
@@ -27,6 +33,12 @@ $(document).ready(function(){
     $( this ).animate({'width': "40%"});
     }
   );
+  $('#preload_logo').hover(function() {
+    $( '.preload_logo_span' ).fadeIn();
+
+    }, function() {
+    $( '.preload_logo_span' ).fadeOut();
+  });
 
   $('#logo').hover(function() {
     $( '.logo_span' ).fadeIn();
@@ -103,7 +115,7 @@ $(window).scroll(function(){
   if ($(this).scrollTop()>number*1.6){
     $('#projects_screen').fadeIn("slow");
     $('#projects_nav').fadeIn("slow");
-    // console.log('PROJECTS APPENDED');
+
   }
   if ($(this).scrollTop()>number){
     $('#sticky_nav').fadeIn();
