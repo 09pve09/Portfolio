@@ -10,9 +10,9 @@ function init_video() {
            var myVideo = document.getElementById("video");
            myVideo.addEventListener('ended', loopVideo, false);
 }
- function loopAudio() {
+ function loopVideo() {
      var myVideo = document.getElementById("video");
-     myAudio.play();
+     myVideo.play();
  }
 
 $(document).ready(function(){
