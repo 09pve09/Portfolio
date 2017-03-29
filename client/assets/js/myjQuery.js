@@ -1,7 +1,6 @@
 // console.log("jQuery is here");
 
 
-
 $(window).on('load', function() {
    $("#cover").fadeOut(2000);
 });
