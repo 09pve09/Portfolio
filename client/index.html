@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Victor Pak</title>
+    <script src="dist/iphone-inline-video.min.js"></script>
 <!-- Angular from bower_components, otherwise find the CDN -->
     <script src="angular/angular.js" charset="utf-8"></script>
     <script src="angular-route/angular-route.js" charset="utf-8"></script>
@@ -55,7 +56,7 @@
       <a class="link" href="#contact">Contact</a>
     </div>
 
-    <div id="main" class="container-fluid video_wrapper" onload="init_video();">
+    <div id="main" class="container-fluid video_wrapper" >
       <div class="video_container">
           <div id="welcome">
             <div class="sub_welcome">
@@ -78,7 +79,7 @@
             </ul>
           </div>
         <div id="opacity"></div>
-        <video muted id="video" preload="metadata" loop autoplay>
+        <video muted id="video" preload="metadata" playsinline loop autoplay>
           <source src="video/city_water.mp4" type="video/mp4">
         </video>
       </div>

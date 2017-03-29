@@ -11,7 +11,7 @@ app.use( express.static( path.join( root, 'bower_components' )));
 app.use( bp.json());
 app.use('/animate/styles', express.static(root + '/node_modules/animate.css/'));
 app.use('/vidage/styles', express.static(root + '/node_modules/vidage/dist/styles/'));
-app.use('/vidage/scripts', express.static(root + '/node_modules/vidage/dist/scripts/'));
+app.use('/dist/', express.static(root + '/node_modules/iphone-inline-video/dist/'));
 require('./server/config/mongoose.js');
 require('./server/config/routes.js')(app);
 

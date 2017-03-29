@@ -6,20 +6,27 @@ $(window).on('load', function() {
    $("#cover").fadeOut(2000);
 });
 
-function init_video() {
-           var myVideo = document.getElementById("video");
-           myVideo.addEventListener('ended', loopVideo, false);
-}
- function loopVideo() {
-     var myVideo = document.getElementById("video");
-     myVideo.play();
- }
+// function init_video() {
+//            var myVideo = document.getElementById("video");
+//            myVideo.addEventListener('ended', loopVideo, false);
+// }
+//  function loopVideo() {
+//      var myVideo = document.getElementById("video");
+//      myVideo.play();
+//  }
 
 $(document).ready(function(){
   resizeDiv();
 
   setTimeout(show_main_nav, 2500);
   setTimeout(show_header, 1500);
+
+  var video = $('video').get(0);
+  enableInlineVideo(video);
+
+  video.addEventListener('touchstart', function () {
+    video.play();
+  });
 
   $( "#header_name" ).hover(
   function() {
