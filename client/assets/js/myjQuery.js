@@ -3,8 +3,17 @@
 
 
 $(window).on('load', function() {
-   $("#cover").hide();
+   $("#cover").fadeOut(2000);
 });
+
+function init_video() {
+           var myVideo = document.getElementById("video");
+           myVideo.addEventListener('ended', loopVideo, false);
+}
+ function loopAudio() {
+     var myVideo = document.getElementById("video");
+     myAudio.play();
+ }
 
 $(document).ready(function(){
   resizeDiv();
