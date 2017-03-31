@@ -23,6 +23,14 @@ app.controller('mainController', ['$scope', '$location', 'mainFactory', '$rootSc
       description2: 'Used technologies: Ruby on Rails, Google API, Yelp API, Yelp Fusion API.',
       github: 'https://github.com/conniechu929/rails_project',
       web: 'http://52.40.131.196/'
+    },
+    'billpay': {
+      name: "BillPay",
+      image_name: "billpay",
+      description: 'We all have been there at one point or another when things just get too hectic and some things tend to slip our minds. Keeping track of all the bills on top of sifting through all the paperwork can be a hassle and time consuming. We created BillPay to help manage, keep track, and pay bills all in one convenient place so you dont have to. This is project is still on going.',
+      description2: 'Used technologies: Python',
+      github: 'https://github.com/conniechu929/billpay',
+      web: 'http://34.223.251.157/'
     }
   }
   curr_project = library['housingcrime'];
