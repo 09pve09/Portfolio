@@ -31,6 +31,14 @@ app.controller('mainController', ['$scope', '$location', 'mainFactory', '$rootSc
       description2: 'Used technologies: Python',
       github: 'https://github.com/conniechu929/billpay',
       web: 'http://34.223.251.157/'
+    },
+    'sewniq': {
+      name: "Sewniq",
+      image_name: "sewniq",
+      description: 'Worked as one of the lead developers to create and launch Sewniq ICO into Ethereum Blockchain. Developed from user interface design to contract code implementation.',
+      description2: 'Used technologies: Node.js, Angular, Bootstrap, animate.js, web3, Solidity',
+      github: 'https://github.com/09pve09/Sewniq',
+      web: 'https://www.sewniq.com/'
     }
   }
   curr_project = library['housingcrime'];
