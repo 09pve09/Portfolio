@@ -2,7 +2,15 @@
   font-size: 5vw;
 }
 
-
+#cover {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: black;
+  z-index:9999;
+  text-align: center;
+  display: table;
+}
 
 #cover h1 {
   padding-top: 15%;
@@ -11,16 +19,16 @@
 #cover div {
   margin-left:40%;
   width: 19%;
-  text-align: left;
+  text-align: center;
 }
 
 #cover div h2 {
-  padding-top: 3%;
+  padding-top: 5%;
   color: white;
 }
 
 
-#cover div h2:after {
+#cover div h3:after {
   overflow: hidden;
   display: inline-block;
   vertical-align: bottom;
