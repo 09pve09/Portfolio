@@ -22,7 +22,7 @@ app.controller('mainController', ['$scope', '$location', 'mainFactory', '$rootSc
       description: '"FoodFind" allows users to view photos of the restaurants that are near them. If the user likes the photo, they can click on “like” button and see the full information about this location, along with the directions.',
       description2: 'Used technologies: Ruby on Rails, Google API, Yelp API, Yelp Fusion API.',
       github: 'https://github.com/conniechu929/rails_project',
-      web: 'http://52.40.131.196/'
+      web: 'http://34.213.150.5/'
     },
     'billpay': {
       name: "BillPay",
